@@ -348,13 +348,106 @@
 # python echo.py test --user -hello some text 
 
 
-import sys
+# import sys
 
-def main():
-    if len(sys.argv) > 1:
-        print(sys.argv[1])
+# def main():
+#     if len(sys.argv) > 1:
+#         print(sys.argv[1])
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 # python arg.py 123
+
+
+# import random
+# import pathlib
+
+# current_dir = pathlib.Path(__file__).parent
+
+# def get_random_joke():
+#     try:
+#         with open(current_dir / "jokes.txt", "r", encoding="utf-8") as file:
+#             jokes = file.readlines()
+#             return random.choice(jokes).strip()
+#     except FileNotFoundError:
+#         return "Не вдалося знайти файл з анекдотами."
+
+
+# def is_even(number: int) -> bool:
+#     if number % 2 == 0:
+#         return True
+#     else:
+#         return False
+# print(is_even(27))
+# print(is_even(12))
+
+
+# def is_even(number: int) -> bool:
+#     return number % 2 == 0
+# print(is_even(27))
+# print(is_even(12))
+
+
+# def is_palindrome(s: str) -> bool:
+#     new_s = ""
+#     for char in s:
+#         if char.isalnum():
+#             new_s += char.lower()
+
+#     s = new_s
+#     length = len(s)
+#     for i in range(length // 2):
+#         if s[i] != s[length - i - 1]:
+#             return False
+#     return True
+
+# # Використання функції
+# print(is_palindrome("Козак з казок"))  # Виведе: True
+
+
+
+# def is_palindrome(s: str) -> bool:
+#     new_s = ""
+#     for char in s:
+#         if char.isalnum():
+#             new_s += char.lower()
+
+#     s = new_s
+#     return s == s[::-1]
+
+# # Використання функції
+# print(is_palindrome("Козак з казок"))  # Виведе: True
+
+
+# # Розрахунок площі 
+# length1, width1 = 5, 10
+# area1 = length1 * width1
+
+# # Багато різного коду
+# length2, width2 = 7, 12
+# area2 = length2 * width2
+
+# print(area1)
+# print(area2)
+
+
+# def calculate_area(length: float, width: float) -> float:
+#     return length * width
+
+# area1 = calculate_area(5, 10)
+# area2 = calculate_area(7, 12)
+# print(area1)
+# print(area2)
+
+
+# from math_operations import calculate_area
+
+# area1 = calculate_area(10, 5)
+# area2 = calculate_area(20, 15)
+# print(area1)
+# print(area2)
+
+
+
+
